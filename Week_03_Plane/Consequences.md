@@ -1,0 +1,1 @@
+https://www.businessinsider.com/amazon-built-ai-to-hire-people-discriminated-against-women-2018-10
