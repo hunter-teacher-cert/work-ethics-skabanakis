@@ -1,0 +1,12 @@
+1. Ask the user if they are traveling with children under 10.
+2. if the answer is yes, then they are automatically promoted to choose their seats at economy_child pricing.
+Then remove how many seats are avaialble and update which seats are taken
+3. If the answer is no, then ask if they want economy or economy_plus 
+** economy child - they have a child under 10 and they get to choose their family seating.
+** economy they do not get to choose their seats
+** economy_plus their is an upcharge to choose their seat.
+4.If they choose economy, we remove how many seats are available but they are not given a seat until the plane is full.
+5. If they choose economy_plus they are shown a chart of what seats are avaiable. then they are promted to selecte their seats.
+6. we then remove those seats, and how many seats are still available.
+7. Once the plane is full ( aka no seats avaiable) then the ecnomoy passengars are assigned seats from front of the plane to the back of those that are still avaiable. 
+Those who purchased the first economy tickets, will be seated first and then the last person who purchased will be seated last.

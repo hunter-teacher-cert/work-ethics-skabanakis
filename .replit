@@ -1,2 +1,2 @@
 language = "bash"
-run = ""
+run = "python ./Week_02/plane_seating.py"

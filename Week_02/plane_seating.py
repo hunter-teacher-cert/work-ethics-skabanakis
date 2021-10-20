@@ -15,16 +15,15 @@ def create_plane(rows,cols):
 
 def get_number_economy_sold(economy_sold):
     """
-Input: a dicitonary containing the number of regular economy seats sold. 
-           the keys are the names for the tickets and the values are how many
-    ex:   {'Robinson':3, 'Lee':2 } // The Robinson family reserved 3 seats, the Lee family 2
+    Input: a dicitonary containing the number of regular economy seats sold. 
+    The keys are the names for the tickets and the values are how many
+    ex:   {'Robinson':3, 'Lee':2 } // The Robinson family reserved 3 seats, the Lee family  2
     Returns: the total number of seats sold
     """
     sold = 0
     for v in economy_sold.values():
-        sold = sold + v
+      sold = sold + v
     return sold
-
 
 def get_avail_seats(plane,economy_sold):
     """
@@ -60,7 +59,6 @@ def get_plane_string(plane):
         s = s + " ".join(r)
         s = s + "\n"
     return s
-
 
 def purchase_economy_plus(plane,economy_sold,name):
     """
@@ -113,7 +111,6 @@ def purchase_economy_plus(plane,economy_sold,name):
             found_seat = True
     return plane
 
-
 # THIS WILL BE LEFT EMPTY FOR THE FIRST STAGE OF THE PROJECT
 def seat_economy(plane,economy_sold,name):
     """
@@ -129,7 +126,6 @@ def seat_economy(plane,economy_sold,name):
     # add code to seat all the economy_sold people
     return plane
 
-
 def purchase_economy_block(plane,economy_sold,number,name):
     """
     Purchase regular economy seats. As long as there are sufficient seats
@@ -142,7 +138,6 @@ def purchase_economy_block(plane,economy_sold,number,name):
     if seats_avail >= number:
         economy_sold[name]=number
     return economy_sold
-
 
 def fill_plane(plane):
     """
@@ -188,13 +183,12 @@ def fill_plane(plane):
 
 
     return plane
-    
-    
-    
+       
 def main():
     plane = create_plane(10,5)
-    print(get_plane_string(plane))
+    #print(get_plane_string(plane))
     plane = fill_plane(plane)
     print(get_plane_string(plane))
+
 if __name__=="__main__":
     main()
